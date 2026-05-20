@@ -1,0 +1,48 @@
+.container {
+    width: 950px;
+    background-color: #eaeaea;
+    margin: 10px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+
+.top-nav {
+    height: 200px;
+    background-color: #ffcc00;
+    margin: 15px;
+}
+
+.side-nav {
+    height: 320px;
+    width: 210px;
+    background-color: #66ccff;
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 15px 0px 30px 0px;
+}
+
+.main {
+    height: 400px;
+    width: 670px;
+    background-color:deeppink;
+    margin: 0px 15px 15px 15px;
+    display: inline-block;
+    vertical-align: middle;
+    vertical-align: top;
+}
+
+.sub-content {
+    height: 200px;
+    width: 200px;
+    background-color:mediumblue;
+    display: inline-block;
+    margin: 10px;
+}
+
+#advertisement {
+    height: 120px;
+    width: 630px;
+    background-color: #33cc33;
+    margin: 10px;
+}

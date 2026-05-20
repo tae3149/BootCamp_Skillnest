@@ -1,0 +1,188 @@
+<!DOCTYPE html> <!-- Nos indica que usamos HTML5 -->
+<html lang="es"> <!-- Documento de HTML, declarando a través de un atributo que el lenguaje es inglés -->
+<head>
+    <meta charset="UTF-8"> <!-- Indica la codificación de caracteres = Yo puedo utilizar `^´ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Web</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<!-- Body: todo lo que el usuario puede visualizar en el navegador, contenido de mi sitio web -->
+<body>
+    
+    <!-- heading = encabezado = titulos 1->6 -->
+    <h1>¡Hola! Mi nombre es Cynthia Castillo</h1>
+    <h2>Encabezado 2</h2>
+    <h3>Encabezado 3</h3>
+    <h4 class="rojo">Encabezado 4</h4>
+    <h5>Encabezado 5</h5>
+    <h6>Encabezado 6</h6>
+
+    <p class="rojo subrayado">Este es un párrafo.</p>
+
+    <p id="parrafo_especial" >
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quisquam nesciunt minus. Quibusdam asperiores dignissimos illo ea rem quidem eligendi.
+    </p>
+    <p>
+        Estas son etiquetas de formato: <strong>negritas</strong>, <em>énfasis o itálicas</em>
+    </p>
+
+    <h2>Lista desordenada</h2>
+    <ul> <!-- Unordered List = Viñetas -->
+        <li>Fruta</li> <!-- List Item -->
+        <li>Verdura</li>
+        <li>Carne</li>
+        <li>Papel higiénico</li>
+        <li>Jabón</li>
+    </ul>
+
+    <h2>Lista ordenada</h2>
+    <ol> <!-- Ordered List = Enumeran -->
+        <li>Sushi</li>
+        <li>Pizza</li>
+        <li>Tacos</li>
+        <li>Empanadas</li>
+    </ol>
+
+    <table>
+        <!-- Table Header = Encabezado de tabla -->
+        <thead>
+            <tr> <!-- Table Row = Fila de Tabla -->
+                <th>Nombre</th> <!-- Table Heading = Título de la tabla -->
+                <th>Apellido</th>
+                <th>Locación</th>
+            </tr>
+        </thead>
+        <!-- Table Body = Cuerpo de tabla -->
+        <tbody>
+            <tr>
+                <td>Cynthia</td> <!-- Table Data = Columna -->
+                <td>Castillo</td>
+                <td>México</td>
+            </tr>
+            <tr>
+                <td>Cintya</td>
+                <td>Ramírez</td>
+                <td>Chile</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <img src="img/gatito.jpg" alt="Imagen de Gatito" >
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVfHORQFLyUf_rNove-xUmxIskDeMJ63REz_YIMQ6S0vCyQdkBvJos4igKspvCgpqnpy8h0xM--1uckzZIxDgyoHy37-MowkF-YzvVx8&s=10" alt="Imagen de Gatito" >
+
+    
+    <div> <!-- Caja Divisora -->
+        <!-- Anclaje / Enlaces / Hipervínculos = ANCHOR -->
+        <a href="http://google.com" target="_blank" >
+            Haz click aquí
+        </a>
+    </div>
+
+    <!-- action = El lugar a donde quiero enviar la información del formulario -->
+    <!-- method = La manera en la que yo envío la información -->
+    <form action="#" method="post" >
+        <div>
+            <label for="nombre_id" >Nombre:</label>
+            <input type="text" name="nombre_usuario" id="nombre_id">
+            <input type="number" name="edad" >
+            <input type="password" name="contrasena">
+            <label for="fecha_id">Fecha de Nacimiento:</label>
+            <input type="date" name="fecha_nacimiento" id="fecha_id" >
+            <input type="email" name="correo_electronico" >
+        </div>
+        <!-- Inputs: Radio, Checkbox, Select -->
+        <div>
+            <label>Estado Civil:</label><br>
+            <input type="radio" name="estado_civil" value="casado" id="casado_id" >
+            <label for="casado_id">Casado</label> <br>
+            <input type="radio" name="estado_civil" value="soltero" id="soltero_id" >
+            <label for="soltero_id">Soltero</label>
+        </div>
+        <div>
+            <label>¿Qué usuario eres?</label>
+            <select name="usuario">
+                <option value="123-45">Elena de Troya</option>
+                <option value="345-67">Juana de Arco</option>
+                <option value="456-78">Pablo Picasso</option>
+                <option value="567-89">Pedro Páramo</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="terminos_condiciones" id="terminos_condiciones" >
+            <label for="terminos_condiciones">Acepto los términos y condiciones</label>
+        </div>
+        <div>
+            <textarea name="biografia" cols="40" rows="20" maxlength="20" ></textarea><br>
+            <small>*Tienes un máximo de 20 caracteres</small>
+        </div>
+        <div>
+            <input type="submit" value="Enviar Información">
+            <button type="submit">Segundo botón para enviar</button>
+        </div>
+
+        <!-- Validador -->
+    </form>
+
+    <p class="colores">
+        Reglas de Colores
+    </p>
+
+    <p id="texto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis temporibus iure nihil fuga nostrum aperiam fugiat, qui veritatis. Explicabo harum itaque ea culpa earum iure asperiores tempore dolor labore eum quidem quod enim ad aspernatur, alias praesentium inventore odio molestiae possimus dignissimos ut delectus perferendis numquam! Atque placeat suscipit et minus molestias adipisci possimus quia corrupti ut facilis voluptatem eaque impedit saepe eos sequi natus excepturi, culpa, soluta facere temporibus blanditiis iusto. Et, magnam voluptate corporis ab asperiores enim laudantium harum. Ad, dolorem id. Laboriosam consectetur dolor architecto natus esse provident amet voluptate dicta! Labore minima alias quas expedita voluptates!
+    </p>
+
+    <div class="tamano"></div>
+
+    <div class="fondo">
+        Texto
+    </div>
+    <input type="color" >
+    <details></details>
+    <div>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.6903709285843!2d-70.69812832540147!3d-33.48341119919902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c4b851c9d621%3A0xdd6c5f6d87dfc0c9!2sCerrillos!5e0!3m2!1ses-419!2scl!4v1778277039814!5m2!1ses-419!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+    </div>
+
+    <div class="caja">
+        Caja
+    </div>
+
+    <div class="div_especial" id="div_id"></div>
+
+    <div class="padre">
+        <p>
+            Párrafo Hijo
+        </p>
+        <div>
+            <p>
+                Párrafo Nieto
+            </p>
+        </div>
+        <p>
+            Otro párrafo
+        </p>
+    </div>
+
+    <ul>
+        <li>123</li>
+        <li class="modificado">345</li>
+        <li>456</li>
+    </ul>
+
+    <h4 class="inline">Cynthia</h4>
+    <h4 class="inline">Castillo</h4>
+
+    <a href="#" class="block" >Enlace 1</a>
+    <a href="#" class="block" >Enlace 2</a>
+    
+    <div class="inline-block" id="div1" >ABC</div>
+    <div class="inline-block" id="div2" >DEF</div>
+    <div class="inline-block" id="div3" >GHI</div>
+
+    <div class="caja-grande">
+        <div class="caja-pequena"></div>
+        <div class="caja-pequena"></div>
+    </div>
+    
+</body>
+</html>

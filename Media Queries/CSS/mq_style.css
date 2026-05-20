@@ -1,0 +1,99 @@
+/* CSS RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: rgb(137, 188, 233);
+    text-align: center;
+}
+
+.texto {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /*margin: 40px 0;*/
+    font-size: 20px;
+    color: #003566;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /*Necesita flex*/
+}
+
+.caja {
+    background-color: #4361ee;
+    color: white;
+    padding: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+/*
+MEDIDAS
+Celular: hasta 480px
+Tablet: hasta 768px
+Laptop: hasta 1024
+Desktop: más 1200px (1280px)
+Desktop HD: Más de 1900px (1920px)
+*/
+
+/*Si la pantalla llega a un máximo de 1024
+769px - 1024px
+Laptop*/
+@media (max-width: 1024px) {
+
+    body {
+        background-color: #d9f99d;
+    }
+
+    .caja {
+        background-color: #2b9348;
+    }
+}
+
+/*
+481px - 768px
+*/
+
+@media (max-width: 768px) {
+
+    body {
+        background-color: #ffe066;
+    }
+
+    .contenedor {
+        /*Hace que mi contenedor sea miltilinea. Entonces si algo no cabe, lo baja*/
+        flex-wrap: wrap;
+    }
+
+    .caja {
+        background-color: #ff922b;
+    }
+}
+
+/*
+0px - 480px
+*/
+
+@media (max-width: 480px) {
+    
+    body {
+        background-color: #ffccd5;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caja {
+        background-color: red;
+        width: 80%;
+    }
+}
