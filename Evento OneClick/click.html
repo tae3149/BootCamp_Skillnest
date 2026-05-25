@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/click_style.css">
+    <title>Petlopedia</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-contenedor">
+            <a class="nav-logo" href="#">Petlopedia</a>
+                <form action="#" method="get">
+                  <input type="text" name="busqueda" placeholder="Buscar mascotas...">
+                  <button type="submit">🔍</button>
+                </form>
+            <a href="#" class="btn-sesion" id="btn-sesion">Iniciar sesión</a>
+        </div>
+    </nav>
+
+  <div class="contenedor-principal">
+    <div class="columna-izquierda">
+        <div class="animal-1">
+            <h1>Gato Atigrado</h1><br>
+
+            <span>sustantivo</span>
+            
+            <h2>Plural: Gatos atigrados</h2>
+            <p>
+            Un gato con un pelaje distintivo que presenta raya, puntos o patrones en remolino, usualmente con una marca en forma de "M" en su frente.
+            </p>
+            <button class="btn-me-gusta" data-nombre="Gato Atigrado">Me gusta</button>
+            <span class="contador-likes">0</span> likes
+        </div>
+
+        <div class="animal-2">
+            <h1>Golden Retriever</h1><br>
+            <span>sustantivo</span><br>
+            <h2>Plural: Golden Retrievers</h2>
+            <p>
+            Una raza de perro amistosa, inteligente y devota, conocida por su pelaje dorado y su habilidad para recuperar objetos sin dañarlos.
+            </p>
+            <button class="btn-me-gusta" data-nombre="Golden Retriever">Me gusta</button>
+            <span class="contador-likes">0</span> likes
+        </div>
+    </div>
+    <div class="columna-derecha">
+        Petlopedia está definida por TI
+        <button class="btn-definicion" id="btn-definicion">Agregar definición</button>
+    </div>
+   </div>
+    <script src="JS/click_script.js"></script>
+</body>
+</html>

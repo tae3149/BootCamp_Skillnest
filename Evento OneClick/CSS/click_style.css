@@ -1,0 +1,152 @@
+/* RESET*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+     box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: rgb(169, 169, 169);
+    border-bottom: 2px solid;
+}
+
+.nav-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 32px;
+    gap: 24px;
+    width: 100%;
+}
+
+.nav-logo {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-contenedor form {
+    flex: 1; 
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.nav-contenedor input {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+}
+
+.nav-contenedor button[type="submit"] {
+    padding: 0 12px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+    background: white;
+    cursor: pointer;
+}
+
+.btn-sesion {
+    background-color: #2f6ad7;
+    padding: 8px 20px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    border: none;
+}
+
+.contenedor-principal {
+    display: flex;
+    gap: 32px;
+    padding: 32px;
+    align-items: flex-start;
+}
+
+.columna-izquierda {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+}
+
+.animal-1,
+.animal-2 {
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: white;
+}
+
+.animal-1 p,
+.animal-2 p {
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+.btn-me-gusta {
+    display: flex-end;
+    background-color: #cccccc;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    text-decoration-line: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    border: 1.5px solid #888888;
+}
+
+.columna-derecha {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    overflow: hidden;
+    padding: 16px;
+}
+
+.animal-1 h2, .animal-2 h2 {
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.animal-1 span, .animal-2 span {
+    font-style: italic;
+    color: #555;
+    font-size: 14px;
+}
+
+.animal-1 p, .animal-2 p {
+    margin: 12px 0;
+    line-height: 0.9;
+}
+
+.btn-definicion {
+    display: flex-end;
+    background-color: #349b18;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration-line: none;
+    cursor: pointer;
+}
