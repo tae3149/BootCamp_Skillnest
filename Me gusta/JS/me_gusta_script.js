@@ -15,4 +15,11 @@ function darLike(boton) {
     // Suma 1 al valor actual y actualiza el texto visible en pantalla
     spanContador.innerText = likesActuales + 1;
 
+
+
+    //ESTA PARTE ES PARA EJEMPLIFICAR MENSAJE DE ALERTA AL DAR LIKE
+    //let tarjetaHeader = likesArea.parentElement;
+    //let nombreAutor = tarjetaHeader.querySelector(".autor").innerText;
+
+    //alert("Le diste like a la publicación de " + nombreAutor + "!")
 }
